@@ -1,0 +1,47 @@
+@media (min-width: 900px) {
+
+  body
+  {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  body div
+  {
+    flex-grow: 1;
+  }
+
+  body .profile {
+    width: fit-content;
+  }
+
+  body .info 
+  {
+    border-top: 0px solid white;
+    padding-top: 50px;
+    overflow-y:scroll;
+    height: 100%;
+  }
+
+  body .info .info-details
+  {
+    gap: 5px;
+    padding: 10px;
+    margin: 0px 0;
+    width: 100%;
+  }
+
+  body .info .info-details .img{
+    width: 100%;
+    height: 400px;
+  }
+
+  body .info div img
+  {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+  }
+}

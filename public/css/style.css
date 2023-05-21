@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121215;
+  animation:show .8s ;
+  
+}
+
+body div{
+  width: 320px; 
+}
+
+body .profile
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  position: relative;
+}
+
+@keyframes show{
+  from{
+    transform: translateY(-200px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+body .profile svg {
+  transform: scale(1);
+}
+
+body .profile .border-photo
+{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to left, #D39E33, #ED5636, #633BBC);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+body .profile .border-photo a{
+  width: 100%;
+  height: 100%;
+}
+
+body .profile .border-photo img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all .5s;
+  filter: invert(88%);
+}
+
+body .profile .border-photo img:hover{
+  transform: scale(1.1);
+}
+
+body .profile h1
+{
+  font-family: monospace;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+body .profile h1 strong
+{
+  color: white;
+  animation: text-name 1s ease-in-out infinite;
+  font-size: 28px;
+}
+
+@keyframes text-name {
+  0%{
+     color: #D39E33;
+  }
+
+  40%{
+    color: #633BBC;
+  }
+
+  80%{
+    color: #ED5636;
+  }
+
+  100%{
+    color: white;
+  }
+}
+
+body .profile small
+{
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.665);
+}
+
+body .profile small span
+{
+  color: #633BBC;
+}
+ 
+body .info 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-top: 0.5px solid white
+}
+
+body .info div
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 55px 0;
+}
+
+body .info div small
+{
+  width: 100%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.541);
+  margin-bottom: 10px;
+}
+
+body .info div h1
+{
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-family: monospace;
+}
+body .info div div{
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+body .info div img
+{
+  width: 320px;
+  object-fit: cover;
+  transition: all .5s;
+}
+
+body .info div:hover img
+{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+body .info div p{
+  color: white;
+  text-align: justify;
+  font-family: monospace;
+  font-size: 18px;
+  width: 100%;
+}
