@@ -18,10 +18,6 @@ body
   
 }
 
-body div{
-  width: 320px; 
-}
-
 body .profile
 {
   width: 100%;
@@ -127,7 +123,9 @@ body .info
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  border-top: 0.5px solid white
+  border-top: 0.5px solid white;
+  padding: 0px 20px;
+  
 }
 
 body .info div
@@ -157,11 +155,12 @@ body .info div h1
 body .info div div{
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
 }
 
 body .info div img
 {
-  width: 320px;
+  width: 100%;
   object-fit: cover;
   transition: all .5s;
 }
